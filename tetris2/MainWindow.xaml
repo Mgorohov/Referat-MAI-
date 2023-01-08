@@ -1,0 +1,58 @@
+﻿<Window x:Class="tetris.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tetris" Height="570" Width="525" 
+    KeyDown="HandleKeyDown"
+        Initialized="MainWindow_Initialized" Background="#FFDB9E31" ResizeMode="NoResize">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Right" Width="184" Margin="0,0,20,0">
+            <Label Content="" Height="56" Name="Score" FontSize="35" FontFamily="Impact" Margin="10,0,0,0" Width="150"/>
+            <Label Content="" Height="56" Name="Lines" FontSize="35" FontFamily="Impact" Margin="10,0,0,0" Width="150"/>
+            <Button x:Name="NewGame" Content="New Game" Background="#00000000" BorderBrush="Transparent" FontFamily="Impact" FontSize="22" Foreground="#FF2116A1" Click="NewGame_Click"/>
+            <Button x:Name="Level1" Content="Level1" Background="#00000000" BorderBrush="Transparent" FontFamily="Impact" FontSize="16" Foreground="#FF2116A1" Click="NewGame_Click"/>
+            <Button x:Name="Level2" Content="Level2" Background="#00000000" BorderBrush="Transparent" FontFamily="Impact" FontSize="16" Foreground="#FF2116A1" Click="NewGame_Click"/>
+            <Button x:Name="Level3" Content="Level3" Background="#00000000" BorderBrush="Transparent" FontFamily="Impact" FontSize="16" Foreground="#FF2116A1" Click="NewGame_Click"/>
+            <Button x:Name="Pause" Content="Pause" Background="#00000000" BorderBrush="Transparent" FontFamily="Impact" FontSize="22" Foreground="#FF2116A1" Click="Pause_Click"/>
+            <Button x:Name="Exit" Content="Exit" Background="#00000000" BorderBrush="Transparent" FontFamily="Impact" FontSize="22" Foreground="#FF2116A1" Click="Exit_Click"/>
+            <Label x:Name="Info" Content="Press SHIFT to Pause" Margin="0,190,0,0" FontFamily="Impact" Height="16" Padding="5,0"/>
+            <Label x:Name="Info2" Content="Press ENTER to start a new game" Margin="0,0,0,0" FontFamily="Impact" Height="16" Padding="5,0"/>
+            <Label x:Name="Info3" Content="Press ESC to exit" Margin="0,0,0,0" FontFamily="Impact" Height="16" Padding="5,0"/>
+
+        </StackPanel>
+        <Grid Name="MainGrid" Height="500" Width="250" Margin="20, 0, 0, 10">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>     
+    </DockPanel>
+</Window>
